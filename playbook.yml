@@ -1,0 +1,14 @@
+---
+- name: Installeer Python 3 op alle VM's
+  hosts: all # alle VM's in de inventory
+  become: yes
+
+  tasks:
+    - name: Update de apt cache
+      apt:
+        update_cache: yes
+
+    - name: Installeer Python 3
+      apt:
+        name: python3
+        state: present # installeert Python 3 als het nog niet geïnstalleerd is

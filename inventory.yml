@@ -1,0 +1,8 @@
+all:
+  hosts:
+    s1: # naam van de 1ste VM
+      ansible_host: <IP-adres> # IP-adres van de 1ste VM (te veranderen!)
+      ansible_user: Server1 # gebruikersnaam van de 1ste VM
+    s2: # naam van de 2de VM
+      ansible_host: <IP-adres> # IP-adres van de 2de VM (te veranderen!)
+      ansible_user: Server2 # gebruikersnaam van de 2de VM
